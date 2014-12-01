@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    
+  
+    <fragment 
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:name="com.google.android.gms.maps.MapFragment"/>
+    
+    
+    <Button
+        android:id="@+id/stop_searching"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"     
+        android:onClick="onCancelSearching"
+        android:text="@string/cancel"
+        android:textSize="26sp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+       />
+
+    
+    	<RelativeLayout 
+		    android:id="@+id/searching_container"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="10dp"
+		  >
+		  
+	    	    <ProgressBar
+		    	    android:id="@+id/searchProgressBar"
+		    	    android:layout_width="30dp"
+		    	    android:layout_height="30dp"
+		    	    android:layout_marginRight="10dp"
+		    	   
+		    	/>
+	
+		  		<TextView 
+		  		    android:id="@+id/searching_title"
+		  		    android:layout_height="wrap_content" 
+		  		    android:layout_width="wrap_content" 
+		  		    android:text="@string/searchingTitle" 
+		  		    android:layout_toRightOf="@id/searchProgressBar"
+		  		    android:layout_marginTop="8dp"	
+		  		       
+		  		/>
+  		</RelativeLayout>
+
+    	
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<resources>
+    
+    <color name="red">#F05B53</color>
+    
+    <color name="green">#4FF072</color>
+
+    <string name="app_name">THESSPark</string>
+    
+    <string name="statusTitle">Status</string>
+    
+    <string name="connectivityTitle">Connectivity :</string>
+    
+    <string name="status_ok">OK</string>
+     
+    <string name="status_problem">Not Connected</string>
+    
+    <string name="gpsTitle">Location :</string>
+    
+    <string name="findParking">Find parking space</string>
+    
+    <string name="parked">parking space found</string>
+    
+    <string name="leavingparking">parking space left</string>
+   
+    <string name="cancel">Cancel</string>
+     
+    <string name="searchingTitle">Searching for parking space</string>
+    
+    <string name="reserve">Reserve</string>
+    
+    <string name="parkedConfirmation">Have you parked ?</string>
+    
+    <string name="yes">YES</string>
+    
+    <string name="no">NO</string>
+    
+    <string name="connecting">connecting...</string>
+    
+    <string name="parking_spot_avail_quest">Is the parking spot available?</string>
+    
+    <string name="sharedPreferencesFilename">sharedPreferences</string>
+    
+    <string name="parkaddressFirstPart">You have parked near</string>
+    
+    <string name="parking_not_available">Parking spot not available</string>
+    
+    <string name="parked_question">Have you parked?</string>
+    
+    
+    <string name="server_error">Server Error</string>
+    
+	<color name="myorange">#f16745</color>
+	<color name="mygrey">#b7c3d0</color>
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  
+   	<RelativeLayout 
+	    android:id="@+id/status_container"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="15dp"
+	    android:layout_marginBottom="25dp">
+
+  		<TextView 
+  		    android:id="@+id/status_title"
+  		    android:layout_height="wrap_content" 
+  		    android:layout_width="wrap_content" 
+  		    android:layout_marginBottom="10dp" 
+  		    android:text="@string/statusTitle" 
+  		    
+  		   />
+  		
+  		<TextView 
+  		    android:id="@+id/connectivity_title"
+  		    android:layout_height="wrap_content" 
+  		    android:layout_width="wrap_content" 
+  			android:layout_below="@+id/status_title"
+  		    android:layout_marginBottom="10dp" 
+  		    android:text="@string/connectivityTitle" 
+  		    android:layout_marginRight="5dp"
+  		   />
+  		
+  		<TextView 
+  		    android:id="@+id/connectivity_status"
+  		    android:layout_height="wrap_content" 
+  		    android:layout_width="wrap_content" 
+  			android:layout_below="@+id/status_title"
+  			android:layout_toRightOf="@id/connectivity_title"
+  		    android:layout_marginBottom="10dp" 
+  		    android:text="@string/status_problem" 
+  		   />
+  		
+  		<TextView 
+  		    android:id="@+id/gps_title"
+  		    android:layout_height="wrap_content" 
+  		    android:layout_width="wrap_content" 
+  			android:layout_below="@+id/connectivity_title"
+  		    android:layout_marginBottom="10dp" 
+  		    android:text="@string/gpsTitle" 
+  		    android:layout_marginRight="5dp"
+  		   />
+  		
+  		<TextView 
+  		    android:id="@+id/gps_status"
+  		    android:layout_height="wrap_content" 
+  		    android:layout_width="wrap_content" 
+  			android:layout_below="@+id/connectivity_title"
+  			android:layout_toRightOf="@id/gps_title"
+  		    android:layout_marginBottom="10dp" 
+  		    android:text="@string/status_problem" 
+  		   />
+  
+	</RelativeLayout>
+	
+   	
+   	<RelativeLayout 
+	    android:id="@+id/connecting_container"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/status_container"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="15dp"
+	    android:layout_marginBottom="25dp"
+	    android:visibility="invisible"
+	   >
+  		
+   	    <ProgressBar
+		     android:id="@+id/progressBar1"
+		     style="?android:attr/progressBarStyleLarge"
+		     android:layout_width="30dp"
+		     android:layout_height="30dp" 		    
+		     android:layout_marginRight="10dp"
+		    />
+  		
+   	    <TextView 
+  		    android:id="@+id/connecting"
+  		    android:layout_height="wrap_content" 
+  		    android:layout_width="wrap_content" 
+  		    android:text="@string/connecting" 
+  		    android:layout_toRightOf="@id/progressBar1"
+  		    android:layout_marginTop="5dp"
+  		   />
+   	    
+   	    
+   	    	  		
+    </RelativeLayout>
+    
+    <Button 
+        android:id="@+id/button_find_parking" 
+        android:layout_height="100dp" 
+        android:layout_width="match_parent" 
+        android:text="@string/findParking"     
+        android:textSize="22sp" 
+        android:visibility="visible" 
+        android:onClick="onParkingSearching" 
+        android:layout_margin="5dp" 
+        android:layout_below="@+id/connecting_container"
+        android:enabled="false"
+        />
+    
+     <Button 
+        android:id="@+id/button_parking_found" 
+        android:layout_height="100dp" 
+        android:layout_width="match_parent" 
+        android:text="@string/parked"     
+        android:textSize="22sp" 
+        android:visibility="visible" 
+        android:onClick="onParkingStatusChanged" 
+        android:layout_margin="5dp" 
+        android:layout_below="@+id/button_find_parking"
+        android:enabled="false"
+        />
+     
+     <TextView 
+  		    android:id="@+id/park_address"
+  		    android:layout_height="wrap_content" 
+  		    android:layout_width="wrap_content" 
+  			android:layout_alignParentBottom="true"
+  			android:layout_centerHorizontal="true"
+  		    android:layout_marginBottom="10dp" 
+  		    android:text="Έχετε παρκάρει: Τσιμισκή 123" 
+  		  	android:textSize="16sp"
+  		  	android:visibility="invisible"
+  		  	android:gravity="center"
+  		  	android:layout_margin="5dp"
+  		   />
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="statusTitle">Κατάσταση</string>
+    
+    <string name="connectivityTitle">Συνδεσιμότητα : </string>
+    
+    <string name="status_problem">Πρόβλημα σύνδεσης</string>
+     
+    <string name="gpsTitle">Τοποθεσία :</string>
+   
+    <string name="findParking">Εύρεση θέσης στάθμευσης</string>
+    
+    <string name="parked">Βρήκα θέση</string>
+    
+    <string name="leavingparking">Φεύγω από τη θέση</string>
+    
+    <string name="cancel">Άκυρο</string>
+    
+    <string name="searchingTitle">Αναζήτηση θέσης parking</string>
+    
+    <string name="reserve">Κράτηση</string>
+    
+    <string name="parkedConfirmation">Έχετε παρκάρει κοντά στην</string>
+    
+    <string name="parking_spot_avail_quest">Είναι η θέση διαθέσιμη;</string>
+    
+    <string name="yes">ΝΑΙ</string>
+    
+    <string name="no">ΟΧΙ</string>
+    
+    <string name="connecting">σύνδεση...</string>
+    
+    <string name="server_error">Πρόβλημα επικοινωνίας με τον Server</string>
+     
+    <string name="parkaddressFirstPart">Έχετε παρκάρει κοντά</string>
+    
+    <string name="parking_not_available">H Θέση δεν είναι διαθέσιμη</string>
+    
+    <string name="parked_question">Έχετε παρκάρει;</string>
+
+</resources>

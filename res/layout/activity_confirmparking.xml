@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  		<TextView 
+  		    android:id="@+id/parkconfirm"
+  		    android:layout_height="wrap_content" 
+  		    android:layout_width="wrap_content" 
+  		    android:layout_marginTop="20dp" 
+  		    android:text="@string/parked_question" 	
+  		    android:layout_centerHorizontal="true"
+  		    android:textSize="28sp"
+  		    android:layout_marginBottom="50dp"    
+  		    
+  		 />
+  		
+  	
+    
+	    <Button 
+	        android:id="@+id/button_parked" 
+	        android:layout_height="100dp" 
+	        android:layout_width="match_parent" 
+	        android:text="@string/yes"     
+	        android:textSize="34sp" 
+	        android:visibility="visible" 
+	        android:onClick="onParked" 
+	        android:layout_below="@id/parkconfirm"
+	        android:background="@color/green"
+	        android:layout_marginBottom="50dp" 
+	        android:layout_marginRight="30dp" 
+	        android:layout_marginLeft="30dp"     
+	        />
+	    
+	     <Button 
+	        android:id="@+id/button_not_parked" 
+	        android:layout_height="100dp" 
+	        android:layout_width="match_parent" 
+	        android:text="@string/no"     
+	        android:textSize="34sp" 
+	        android:layout_marginRight="30dp" 
+	        android:layout_marginLeft="30dp" 
+	        android:visibility="visible" 
+	        android:onClick="onNotParked" 
+	        android:layout_below="@id/button_parked"
+	        android:background="@color/red"
+	        />
+
+</RelativeLayout>
